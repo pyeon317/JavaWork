@@ -1,0 +1,8 @@
+package day19.api.thread;
+
+public class MainClass02 {
+
+	public static void main(String[] args) {
+		
+	}
+}

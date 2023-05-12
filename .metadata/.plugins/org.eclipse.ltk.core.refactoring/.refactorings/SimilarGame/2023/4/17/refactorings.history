@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;뚜드ㅛ&apos; to &apos;Enemy&apos;&#x0D;&#x0A;- Original project: &apos;SimilarGame&apos;&#x0D;&#x0A;- Original element: &apos;SimilarGame/src/뚜드ㅛ&apos;&#x0D;&#x0A;- Renamed element: &apos;SimilarGame/src/Enemy&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;뚜드ㅛ&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;뚜드ㅛ" name="Enemy" qualified="false" references="true" stamp="1682666071318" textual="false" version="1.0"/>
+</session>

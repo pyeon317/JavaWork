@@ -1,0 +1,44 @@
+package quiz22;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class RegexQuiz02 {
+
+	public static void main(String[] args) {
+		
+		String str = "123123-1231231 GS25(치킨마요) 4,400원";
+		String str2 = "123123-1231232 GS25(주부18단) 5,000원";
+		
+		String pattern1 = "[0-9-]{4,}";
+		String pattern2 = "[A-Z]+[0-9]{2}";
+		String pattern3 = "[\\(가-힣\\)[0-9]{2,}]";
+		String pattern4 = "[0-9,]+원";
+		
+		Matcher m1 = Pattern.compile(pattern1).matcher(str);
+		Matcher m2 = Pattern.compile(pattern2).matcher(str);
+		Matcher m3 = Pattern.compile(pattern3).matcher(str);
+		Matcher m4 = Pattern.compile(pattern4).matcher(str);
+		
+		Matcher m5 = Pattern.compile(pattern1).matcher(str2);
+		Matcher m6 = Pattern.compile(pattern2).matcher(str2);
+		Matcher m7 = Pattern.compile(pattern3).matcher(str2);
+		Matcher m8 = Pattern.compile(pattern4).matcher(str2);
+		
+		System.out.println("---------------------------------------------");
+		while(m1.find() && m2.find() && m3.find() && m4.find()) {
+			System.out.println(m1.group());
+			System.out.println(m2.group());
+			System.out.println(m3.group());
+			System.out.println(m4.group());
+		}
+		System.out.println("---------------------------------------------");
+		while(m5.find() && m6.find() && m7.find() && m8.find()) {
+			System.out.println(m5.group());
+			System.out.println(m6.group());
+			System.out.println(m7.group());
+			System.out.println(m8.group());
+		}
+		
+	}
+}

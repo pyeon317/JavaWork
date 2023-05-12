@@ -1,0 +1,20 @@
+package day19.api.thread;
+
+public class ThreadTest implements Runnable{
+
+	@Override//반드시 필요
+	public void run() {
+		for(int i = 1; i<=10;i++) {
+			System.out.println("작업쓰레드에서 실행된 for문:" + i);
+			
+			try {
+				Thread.sleep(1000);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			
+		}
+		
+	}
+
+}

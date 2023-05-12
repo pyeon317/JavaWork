@@ -1,0 +1,17 @@
+package quiz20;
+
+public class BufferReaderUTF8 {
+
+	public static void main(String[] args) {
+		
+		String path = "C:\\Users\\user\\Desktop\\file\\example1.txt";
+		
+		try {
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		
+	}
+}
