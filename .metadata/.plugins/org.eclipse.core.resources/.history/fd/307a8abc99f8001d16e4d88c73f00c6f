@@ -1,0 +1,19 @@
+package Lv1;
+
+import java.util.HashMap;
+
+public class Solution {
+	
+	public String[] solution(String[] players, String[] callings) {
+        HashMap<Integer, String>hm = new HashMap<>();
+        
+		String str = null;
+        for(int i = 0; i < callings.length; i++) {
+        	
+        		}
+        	
+        
+		
+        return players;
+    }	
+}

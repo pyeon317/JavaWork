@@ -1,0 +1,33 @@
+package quiz01; //현제 클래스는 백준 사이트의 문제를 풀기 위한 스크립트로 노션에 푼 문제들을 저장함
+
+import java.io.*;
+import java.util.*;
+
+public class Main{
+
+    public static void main(String[] args) throws Exception{
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int i = 1;
+		String line;
+		
+		while((line = br.readLine()) != null) {//읽을 내용이 없으면 탈출
+			StringTokenizer st = new StringTokenizer(line); //읽는거 초기화
+			int L = Integer.parseInt(st.nextToken());
+			int P = Integer.parseInt(st.nextToken());
+			int V = Integer.parseInt(st.nextToken());
+			
+			int a = (V / P) * L;
+			int b = V % P;
+			if(L < b) {//남은 이용가능 날짜보다 휴가일수가 클 때
+				b = b - L;
+			}
+			
+			if(V == 0) { //쓸 수 있는 휴가가 없으면 출력되지 않게
+				continue;
+			}else {
+				System.out.println("Case " + i + ": " + (a+b));
+			}
+			i++;
+		}
+	}
+}

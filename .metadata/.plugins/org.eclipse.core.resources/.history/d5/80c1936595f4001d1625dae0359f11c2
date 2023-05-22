@@ -1,0 +1,32 @@
+package quiz01; //현제 클래스는 백준 사이트의 문제를 풀기 위한 스크립트로 노션에 푼 문제들을 저장함
+
+import java.io.*;
+import java.util.*;
+
+public class Main{
+
+    public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int N = scan.nextInt();
+		int cnt = 0;//주머니 수
+		
+		switch (N/10) {
+		case 1: case 6:
+			
+			break;
+		case 2: case 7:
+			
+			break;
+		case 3: case 8:
+			
+			break;
+		case 4: case 9:
+			
+			break;
+
+		default:
+			break;
+		}
+		
+	}
+}

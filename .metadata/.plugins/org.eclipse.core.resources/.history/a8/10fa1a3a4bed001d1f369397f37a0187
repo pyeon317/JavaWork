@@ -1,9 +1,0 @@
-package day17.api.ramda.basic;
-
-public class Person {
-
-	//일반클래스 - 고차함수를 가지고 있는 클래스
-	public void greedting(Say01 say01) {
-		
-	}
-}

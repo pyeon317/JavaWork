@@ -1,0 +1,29 @@
+package quiz01; //현제 클래스는 백준 사이트의 문제를 풀기 위한 스크립트로 노션에 푼 문제들을 저장함
+
+import java.io.*;
+import java.util.*;
+
+public class Main{
+
+    public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int N = scan.nextInt();
+		int cnt = 0;//주머니 수
+		
+		if(N % 10 == 6 || N % 10 == 9) {//1의 자리가 6 또는 9 일 때
+			cnt = N / 5 - 1;
+			N = N % 5 + 5;
+		}else {//나머지 일반적인 경우
+			cnt = N / 5;
+			N = N % 5;
+		} //5짜리 보자기 종료
+		
+		cnt += N / 3; //3짜리 보자기 추가
+		
+		if( N % 3 != 0 ) {
+			System.out.println(-1);
+		}else {
+			System.out.println(cnt);
+		}
+	}
+}

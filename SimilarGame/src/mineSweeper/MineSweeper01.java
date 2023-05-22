@@ -1,6 +1,7 @@
 package mineSweeper;
 
 import java.io.*;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class MineSweeper01 {
@@ -28,7 +29,6 @@ public class MineSweeper01 {
 			case 3://16*30 99
 				mine(16, 30, 99);
 				
-				
 				break;
 
 			default:
@@ -39,28 +39,41 @@ public class MineSweeper01 {
 	
 	static void mine(int x, int y, int z) {
 		
-		String m = "mine";
+		int m = -1;
 		
-		String[][] arr = new String [x][y];
+		int[][] arr = new int [x][y];
 		
 		int i = 0;
 		
-		while(i < z-1) {
+		while(i < z) {
 		
 			int a = (int)(Math.random()*x); //배열은 0부터 시작하니까 +1 안해도 됨
 			int b = (int)(Math.random()*y);
 			
-			if(arr[a][b] == null) {
+			if(arr[a][b] != 0) {
 				arr[a][b] = m;
 				i++;
-			}else {						
-				i--;
 			}																					
+		}//생성완료
+		System.out.println(Arrays.deepToString(arr));
+		//여기부터 숫자넣기
+		for(int a = 0; a < x; a++) {
+			for(int b = 0; b < y; b++) {//전체배열
+				
+				if(arr[a][b] == 0) {//빈칸이면 계산하고 수 입력
+					int count = 0;
+					
+					for(int c = a-1; c < a + 2; c++) {//범위탐색
+						for(int d = y - 1; d < y + 2; d++) {
+							
+//							if(c < 0 || c > (a+2) || d < 0 || d > (y+2))continue; //범위밖으로 벗어나면 생략
+//							if(arr[c][d] == -1)count++;
+						}
+					}
+				arr[a][b] = count;
+				}
+			}
 		}
-	}
-	
-	static void numbering() {
-		int cnt = 0;
 		
 	}
 }

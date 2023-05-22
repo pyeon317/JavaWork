@@ -1,0 +1,18 @@
+package Lv1;
+
+import java.io.*;
+
+public class Solution {
+
+	public class main{
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	}
+	
+	
+	public String[] solution(String[] players, String[] callings) {
+        String[] answer = {};
+        return answer;
+    }
+	
+	
+}

@@ -1,9 +1,0 @@
-package day17.api.ramda.basic;
-
-public class Person {
-
-	//일반클래스 - 고차함수를 가지고 있는 클래스
-	public void greeting(Say01 say01) {
-		say01.hello(); //대신실행,(이미 만들어져 있음)
-	}
-}
