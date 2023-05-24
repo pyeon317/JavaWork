@@ -15,7 +15,9 @@ public class Solution {
         	if(hm.containsKey(callings[i])) {
         		int a = hm.get(callings[i]); //자리를 바꾸기 위한 위치값
         		//순서바꾸기
-        		int b = hm.get(hm.containsValue(a-1));
+        		for(Map.Entry<String, Integer> ent : hm.entrySet()) {
+        			
+        		}
         	}
         	
         }
